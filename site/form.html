@@ -2,15 +2,6 @@
 <html lang="en">
 <head>
 <title>Course Registration</title>
-<style>
-	table,th,td{
-		border:1px solid black;
-		border-collapse: collapse;
-	}
-	th,td{
-		padding:15px;
-	}
-</style>
 </head>
 <body style="background-color:lightgreen;">
 <img src="NITW.jpg" alt="NITW LOGO" width="100" height="100">
@@ -21,56 +12,56 @@
 <fieldset style="background-color: lightpink">
 		<legend>Personal Information :</legend>
 		<label for="fname">First Name :</label>
-		<input type="text" id="fname" name="fname"><input>
-		<input type="reset">
+		<input type="text" id="fname" name="fname"><br><br>
+		<input type="reset" name="Reset"><hr>
 		<label for="lname">Last Name :</label>
-		<input type="text" id="lname" name="lname">
-		<input type="reset">
+		<input type="text" id="lname" name="lname"><br><br>
+		<input type="reset" name="Reset"><hr>
 </fieldset>
 <fieldset style="background-color: lightblue">
 	<legend>Course information :</legend>
 		<label for="regno">Registration Number :</label>
-		<input type="Number" id="regno" name="regno">
-		<input type="reset">
+		<input type="text" id="regno" name="regno"><br><br>
+		<input type="reset" name="Reset"><hr>
 		<label for="rollno">Roll Number :</label>
-		<input type="Number" id="rollno" name="rollno">
-		<input type="reset">
+		<input type="text" id="rollno" name="rollno"><br><br>
+		<input type="reset" name="Reset"><hr>
 		<label for="branch">Branch :</label>
 		<select id="branch" name="branch">
-			<option value="CSE"></option>
-			<option value="ECE"selected></option>
-			<option value="EEE"></option>
-			<option value="Mechanical"></option>
-			<option value="Civil"></option>
-			<option value="BioTech"></option>
-			<option value="Metallurgy"></option>
-		</select>
-		<input type="reset">
+			<option value="cse">CSE</option>
+			<option value="ece"selected>ECE</option>
+			<option value="eee">EEE</option>
+			<option value="mechanical">Mechanical</option>
+			<option value="civil">Civil</option>
+			<option value="bioTech">BioTech</option>
+			<option value="metallurgy">Metallurgy</option>
+		</select><br><br>
+		<input type="reset" name="Reset"><hr>
 		<label for="courses">Select Courses :</label>
 		<select id="courses" name="courses" size="10" multiple>
-			<option value="Web Technologies"></option>
-			<option value="OOPS"></option>
-			<option value="ITC"></option>
-			<option value="DN"></option>
-			<option value="DSP"></option>
-			<option value="ERTOS"></option>
-			<option value="DN lab"></option>
-			<option value="CS Lab"></option>
-			<option value="VLSI"></option>
-			<option value="Online Course"></option>
-		</select>
-		<input type="reset">
+			<option value="webtech">Web Technologies</option>
+			<option value="oops">OOPS</option>
+			<option value="itc">ITC</option>
+			<option value="dn">DN</option>
+			<option value="dsp">DSP</option>
+			<option value="ertos">ERTOS</option>
+			<option value="dnlab">DN Lab</option>
+			<option value="cslab">CS Lab</option>
+			<option value="vlsi">VLSI</option>
+			<option value="onlinecourse">Online Course</option>
+		</select><br><br>
+		<input type="reset" name="Reset"><hr>
 		<label for="backlogs">Backlogs :</label>
 			<input list="backlogs" name="backlogs">
 			<datalist id="backlogs">
-				<option value="No Backlogs"></option>
-				<option value="1 backlog"></option>
-				<option value="2 backlogs"></option>
-				<option value="More than 2 backlogs"></option>
-			</datalist>
-		<input type="reset">
-<input type="submit" name="Submit">
-<a href="https://www.nitw.ac.in/main/academics/schemes-syllabus/">Refer to courses in NITW</a>
+				<option value="No Backlogs">
+				<option value="1 backlog">
+				<option value="2 backlogs">
+				<option value="More than 2 backlogs">
+			</datalist><br><br>
+		<input type="reset" name="Reset"><hr>
+<input type="submit" name="Submit"><hr>
+<a href="https://www.nitw.ac.in/main/academics/schemes-syllabus/">Refer to courses in NITW</a><hr>
 <textarea name="Why do you want to take these courses?" rows="2" cols="300">These coures will enhance your capabilities and will let you shine in your personal career</textarea>
 <button type="button" onclick="alert(You are done with filling your details :)">Click here</button>
 </form>
